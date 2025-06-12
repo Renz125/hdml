@@ -1,0 +1,9 @@
+H3{color:navajowhite}
+/*selector*/
+H4{color:rebeccapurple}
+/* universal */
+*{font-size: 30px; font-weight: 200;}
+/* class selector */
+.myclass{color:red}
+#myid{color:blueviolet}
+h5,p{color:salmon}
