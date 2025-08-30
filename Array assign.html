@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript array sorts</h1>
+        <p>Carrol created an maped array with the numbers of (6, 10, 500, 32, 80) that were multiplied by 10 and arranged them in a Ascending/Descending order with a click of a button.</p>
+        <button onclick="showAscending()">Ascending</button>
+        <button onclick="showDescending()">Descending</button>
+        <div id="container"></div>
+        
+        <script>
+            let numbers = [6, 10, 500, 32, 80];
+
+            let multiplied = numbers.map(num => num * 10);
+            function display(arr) {
+                let html = "<ul>" ;
+                arr.forEach(value => {
+                 html += "<li>" + value + "</li>"
+                });
+                html += "</ul>";
+                document.getElementById("container").innerHTML = html;
+            }
+
+            function showAscending() {
+                let sorted = [...multiplied].sort((a,b) => a - b);
+                display(sorted);
+            }
+
+            function showDescending() {
+                let sorted = [...multiplied].sort((a,b) => b - a);
+                display(sorted);
+            }
+
+            display(multiplied);
+        </script>
+    </body>
+</html>
