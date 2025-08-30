@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript Try...Catch Example</h2>
+    <h3 id="output"></h3>
+
+    <script>
+      try {
+        
+        let result = number * 10; 
+        document.getElementById("output").innerHTML = "Result: " + result;
+      } 
+      catch (err) {
+        
+        document.getElementById("output").innerHTML = "Error caught: " + err.message;
+      }
+    </script>
+  </body>
+</html>
