@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            good vibes
+        </title>
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace; 
+                background: linear-gradient(to right, rgb(253, 227, 227));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0%; 
+
+            }
+            .container{
+                text-align: center;
+                background: rgb(55, 215, 55);
+                padding: 60px;
+                border-radius: 40px;
+                box-shadow: 0 8px 20px rgb(92, 58, 58);
+            }
+            h1 {
+                margin-bottom: 20px;
+                color:brown;
+            }
+            #quotebox {
+                font-size: 1.4em;
+                color: rgb(51, 21, 21);
+                min-height: 80px;
+                margin-bottom: 30px;
+            }    
+            button {
+                padding:  10px 25px;
+                background-color: rgb(64, 77, 253);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+            }
+            button:hover {
+                background-color: rgb(220, 63, 63);
+            }  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>
+                Good vibes day
+            </h1>
+            <div id="quote">click on button to get inspired</div>
+            <button onclick="generateQuote()">New Quote</button>
+
+        </div>
+        <script>
+            const quotes = [
+                "Believe in yourself and all that you are.";
+                "An apple a day keeps the doctors away.";
+                "Everyday is a second chance.";
+                "You are capable on many thigs.";
+                "Positive mind, Positive vibes. Positive life";
+                "The best time for new begginnings is now.";
+                
+            ];
+
+            function generateQuote() {
+                const randomIndex = Math.floor(Math.random() + quotes.length);
+                document.getElementById("quote").textContent =  quotes(randomIndex);
+            }
+            
+        </script>
+    </body>
+</html>
