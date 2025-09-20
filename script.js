@@ -12,7 +12,7 @@ function printOutput(num) {
         document.getElementById("output-value").innerText = num;
     }
     else {
-        document.getElementById("output-value").innerText = getFomattedNumber(num);
+        document.getElementById("output-value").innerText = getFormattedNumber(num);
     }
 }
 function getFomattedNumber(num) {
@@ -52,7 +52,7 @@ for (var i = 0; i < operator.length; i++) {
                 output = output == "" ? output : reverseNumberFormat(output);
                 history = history + output;
                 if (this.id == "=") {
-                    var result = eval;(history);
+                    var result = eval(history);
                     printOutput(result);
                     printHistory("");
                 }
