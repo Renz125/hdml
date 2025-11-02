@@ -1,19 +1,19 @@
 class Library:
 
     def __init__(self,list_of_books, name):
-        self.list_of_books = list_of_books
+        self.booksList = list_of_books
         self.name = name
         self.lendDict = {}
     
     def displayBooks(self):
         print("We have the following books in our library", {self.name})
-        for book in self.booksLists:
+        for book in self.booksList:
             print(book)
 
     def lendBook(self, user, book):
         if book not in self.booksList:
             print("Sorry, we dont have that book.")
-        elif book in self.bookList:
+        elif book in self.booksList:
             print(f"The book is already being used by", {self.lendDict[book]})
         else:
             self.lendDict[book] = user
@@ -22,7 +22,7 @@ class Library:
             )
         
     def addBook(self,book):
-        self.bookList.append(book)
+        self.booksList.append(book)
         print(f"{book} has been added to the book list.")
 
     def returnBook(self, book):
@@ -48,6 +48,7 @@ while True:
         print("Please enter a valid option:")
         continue
 
+
     if user_choice == '1':
         books.displayBooks()
     elif user_choice == '2':
@@ -68,7 +69,7 @@ while True:
     while(user_choice2!="c" and user_choice2!="q"):
         user_choice2=input()
         if user_choice2=="q":
-            exit()
+            exit()  
     
         elif user_choice2=="c":
             continue
