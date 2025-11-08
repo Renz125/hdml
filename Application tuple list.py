@@ -1,24 +1,12 @@
-my_tuple = ("Albert","Pennywise",24,"167cm", "74kg","Science")
-print(my_tuple)
+my_tuple = ("167cm", "Albert", 24, "74kg", "Science", "Pennywise")
 
-set1 = {"Albert","Pennywise","Science"}
-set2 = {24,"167cm", "74kg"}
+List = (my_tuple[1],
+        my_tuple[5],
+        my_tuple[2],
+        my_tuple[0],
+        my_tuple[3],
+        my_tuple[4],    
+        
+        )
 
-print("Original Sets:")
-print("Set 1:",set1)
-print("Set 2:",set2)
-
-print("Union")
-set3 = set1.union(set2)
-print(set3)
-#diff kind of intersections/p.s just diff symbols
-
-print("Intersection")
-set4=set1.intersection(set2)
-print(set4)
-
-union_set = set1 | set2
-print("Union:",union_set)
-
-Intersection_set = set1 & set2
-print("Union:",Intersection_set)
+print("Application list:",List)
