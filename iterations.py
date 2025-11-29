@@ -1,0 +1,9 @@
+def printnumber (n):
+    iteration = 0 
+    print("The number used by the user is ",n)
+    iteration += 1
+    print("The total iteration done by the code",iteration ,"\n")
+
+printnumber(10)
+printnumber(20)
+print("\n with any 'n' the time taken by our code won't change")
